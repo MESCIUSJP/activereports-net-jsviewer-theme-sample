@@ -1,0 +1,1581 @@
+{
+  "export": {
+    "boolTextFalse": "いいえ",
+    "boolTextTrue": "はい",
+    "cancel-btn": "キャンセル",
+    "emptyTextPlaceholder": "（なし）",
+    "file-format-label": "ファイル形式",
+    "inprogress-lbl": "エクスポート中",
+    "nodocument": "ドキュメントが選択されていません",
+    "start-btn": "エクスポート",
+    "titleDecrease": "減らす",
+    "titleIncrease": "増やす",
+    "titleToggle": "展開..."
+  },
+  "params": {
+    "bool-false-label": "いいえ",
+    "bool-true-label": "はい",
+    "datePlaceholder": "日付を選択してください..",
+    "daysViewHeaderFormat": "yyyy年M月",
+    "ddpTextNull": "(null)",
+    "ddpTextSelectAllValues": "(すべて選択)",
+    "ddpTextSelectValue": "(値を選択してください)",
+    "null": "Null",
+    "paramsTextInvalidValue": "無効な値",
+    "preview-btn-title": "プレビュー"
+  },
+  "paramsValidation": {
+    "dateTimeOutOfRange": "値が間違っています。有効な日付を入力してください。",
+    "integerTooBig": "* 値は53ビット整数を超えることはできません",
+    "invalidBoolean": "* 値が無効です  有効なブール値を入力してください",
+    "invalidDateTime": "* 値が無効です  有効な日付を入力してください",
+    "invalidDateTimeRange": "値が間違っています。有効な日付の範囲を入力してください。",
+    "invalidFloat": "* 値が無効です  有効な浮動小数点数を入力してください",
+    "invalidInteger": "* 値が無効です  有効な整数を入力してください",
+    "outstandingDependencies": "* パラメータに未解決の依存関係があります",
+    "requiredSingleValue": "* 単一値が期待される値に複数値が検出されました",
+    "requiredValue": "* 期待値",
+    "stringEmpty": "* 値が無効です  入力した値が有効であることを確認してください",
+    "unknown": "! 不明なエラー",
+    "valueIsNull": "* 値をnullにすることはできません",
+    "valueOutOfRange": "* 値が無効です  リストから正しい値を選択してください"
+  },
+  "paramsView": {
+    "boolTextFalse": "いいえ",
+    "boolTextTrue": "はい",
+    "boolTextUnspecified": "未設定",
+    "btnTextClear": "クリア",
+    "btnTextPreview": "プレビュー",
+    "btnTextReset": "リセット",
+    "dateTimeRange": {
+      "rangeTypes": {
+        "Current": "今年",
+        "Current_Day": "今日",
+        "Current_Hour": "現在の時",
+        "Current_Minute": "現在の分",
+        "Current_Month": "今月",
+        "Current_Quarter": "今四半期",
+        "Current_Week": "今週",
+        "Current_Year": "今年",
+        "Last": "前 {{count}} 年",
+        "LastSimple": "前年",
+        "LastSimple_Day": "前日",
+        "LastSimple_Hour": "前の時",
+        "LastSimple_Minute": "前の分",
+        "LastSimple_Month": "前月",
+        "LastSimple_Quarter": "前四半期",
+        "LastSimple_Second": "前の秒",
+        "LastSimple_Week": "前週",
+        "LastSimple_Year": "前年",
+        "LastToDate": "過去 {{count}} 年（今日まで）",
+        "LastToDateSimple": "去年至今",
+        "LastToDateSimple_Day": "過去 1 日（今日まで）",
+        "LastToDateSimple_Month": "過去 1 月（今日まで）",
+        "LastToDateSimple_Quarter": "過去 1 四半期（今日まで）",
+        "LastToDateSimple_Week": "過去 1 週（今日まで）",
+        "LastToDateSimple_Year": "過去 1 年（今日まで）",
+        "LastToDate_Day_one": "過去 {{count}} 日（今日まで）",
+        "LastToDate_Day_other": "過去 {{count}} 日（今日まで）",
+        "LastToDate_Month_one": "過去 {{count}} 月（今日まで）",
+        "LastToDate_Month_other": "過去 {{count}} 月（今日まで）",
+        "LastToDate_Quarter_one": "過去 {{count}} 四半期（今日まで）",
+        "LastToDate_Quarter_other": "過去 {{count}} 四半期（今日まで）",
+        "LastToDate_Week_one": "過去 {{count}} 週（今日まで）",
+        "LastToDate_Week_other": "過去 {{count}} 週（今日まで）",
+        "LastToDate_Year_one": "過去 {{count}} 年（今日まで）",
+        "LastToDate_Year_other": "過去 {{count}} 年（今日まで）",
+        "Last_Day_one": "過去 {{count}} 日",
+        "Last_Day_other": "過去 {{count}} 日",
+        "Last_Hour_one": "過去  {{count}} 時",
+        "Last_Hour_other": "過去  {{count}} 時",
+        "Last_Minute_one": "過去 {{count}} 分",
+        "Last_Minute_other": "過去 {{count}} 分",
+        "Last_Month_one": "過去 {{count}} 月",
+        "Last_Month_other": "過去 {{count}} 月",
+        "Last_Quarter_one": "過去 {{count}} 四半期",
+        "Last_Quarter_other": "過去 {{count}} 四半期",
+        "Last_Second_one": "過去 {{count}} 秒",
+        "Last_Second_other": "過去 {{count}} 秒",
+        "Last_Week_one": "過去 {{count}} 週",
+        "Last_Week_other": "過去 {{count}} 週",
+        "Last_Year_one": "過去 {{count}} 年",
+        "Last_Year_other": "過去 {{count}} 年",
+        "Next": "未来 {{count}} 年",
+        "NextSimple": "明年",
+        "NextSimple_Day": "次の日",
+        "NextSimple_Hour": "次の時",
+        "NextSimple_Minute": "次の分",
+        "NextSimple_Month": "次月",
+        "NextSimple_Quarter": "次四半期",
+        "NextSimple_Second": "次の秒",
+        "NextSimple_Week": "次週",
+        "NextSimple_Year": "次年",
+        "Next_Day_one": "次の {{count}} 日",
+        "Next_Day_other": "次の {{count}} 日",
+        "Next_Hour_one": "次の {{count}} 時",
+        "Next_Hour_other": "次の {{count}} 時",
+        "Next_Minute_one": "次の {{count}} 分",
+        "Next_Minute_other": "次の {{count}} 分",
+        "Next_Month_one": "次の {{count}} 月",
+        "Next_Month_other": "次の {{count}} 月",
+        "Next_Quarter_one": "次の {{count}} 四半期",
+        "Next_Quarter_other": "次の {{count}} 四半期",
+        "Next_Second_one": "次の {{count}} 秒",
+        "Next_Second_other": "次の {{count}} 秒",
+        "Next_Week_one": "次の {{count}} 週",
+        "Next_Week_other": "次の {{count}} 週",
+        "Next_Year_one": "次の {{count}} 年",
+        "Next_Year_other": "次の {{count}} 年",
+        "ToDate": "年初至今",
+        "ToDate_Day": "日初来",
+        "ToDate_Month": "月初来",
+        "ToDate_Quarter": "四半期初来",
+        "ToDate_Week": "週初来",
+        "ToDate_Year": "年初来"
+      }
+    },
+    "ddTitleToggle": "拡大",
+    "ddeTextAllValues": "(すべて)",
+    "ddeTextNull": "(null)",
+    "ddeTextSearchValue": "ここに値を入力してください...",
+    "ddeTextSelectAllValues": "(すべて選択)",
+    "drDaysViewHeaderFormat": "yyyy年M月",
+    "drMonthYearOrder": "M-Y",
+    "drPlaceholderDateEnd": "終了日",
+    "drPlaceholderDateStart": "開始日",
+    "drShortcutsLabelLastMonth": "先月",
+    "drShortcutsLabelLastMonthToDate": "過去 1 月（今日まで）",
+    "drShortcutsLabelLastWeek": "先週",
+    "drShortcutsLabelLastWeekToDate": "過去 1 週（今日まで）",
+    "drShortcutsLabelLastYear": "昨年",
+    "drShortcutsLabelLastYearToDate": "過去 1 年（今日まで）",
+    "drShortcutsLabelMonthToDate": "過去１ヶ月間",
+    "drShortcutsLabelWeekToDate": "過去１週間",
+    "drShortcutsLabelYearToDate": "過去１年間",
+    "drTabLabelAnnually": "年ベース",
+    "drTabLabelDaily": "日ベース",
+    "drTabLabelMonthly": "月ベース",
+    "drTabLabelTime": "時間",
+    "drTextBack": "カレンダーに戻る",
+    "drTextShortcutsList": "プリセット期間",
+    "drTitleToggle": "カレンダーを開く",
+    "dtDaysViewHeaderFormat": "yyyy年M月",
+    "dtMonthYearOrder": "Y-M",
+    "dtTextBack": "カレンダーに戻る",
+    "dtTextClear": "クリア",
+    "dtTextSelectDate": "日付を選択してください..",
+    "dtTextSelectFromDate": "\"から\"の日付を選択...",
+    "dtTextSelectToDate": "\"まで\"の日付を選択...",
+    "dtTextToday": "今日",
+    "dtTitleQuickRangePicker": "共通の範囲",
+    "dtTitleToggle": "カレンダーを開く",
+    "lblTextInvalidValue": "無効な値",
+    "lblTextNoAvailableValues": "利用可能な値はありません",
+    "listTextSelectAllValues": "(すべて選択)",
+    "nwrpTextNull": "Null"
+  },
+  "singleDateFormat": {
+    "D": "EEEE, MMMM d, yyyy",
+    "F": "EEEE, MMMM d, yyyy h:mm:ss a",
+    "G": "M/d/yyyy h:mm:ss a",
+    "M": "MMMM d",
+    "O": "yyyy-MM-dd'T'HH:mm:ss.SSSXXX",
+    "R": "EEE, dd MMM yyyy HH:mm:ss 'GMT'",
+    "T": "h:mm:ss a",
+    "U": "EEEE, MMMM d, yyyy h:mm:ss a",
+    "Y": "MMMM yyyy",
+    "d": "MM/d/yyyy",
+    "f": "EEEE, MMMM d, yyyy h:mm a",
+    "g": "M/d/yyyy h:mm a",
+    "m": "MMMM d",
+    "o": "yyyy-MM-dd'T'HH:mm:ss.SSSXXX",
+    "r": "EEE, dd MMM yyyy HH:mm:ss 'GMT'",
+    "s": "yyyy-MM-dd'T'HH:mm:ss",
+    "t": "h:mm a",
+    "u": "yyyy-MM-dd HH:mm:ss[XXX]",
+    "y": "MMMM yyyy"
+  },
+  "viewer": {
+    "cancel-btn": "キャンセル",
+    "document-view": {
+      "aria-label": "ドキュメントビュー"
+    },
+    "error": {
+      "btnShowDetails": "詳細表示",
+      "dismiss": "通知を削除",
+      "dismiss-all": "全ての通知を削除",
+      "notificationsDetails": "通知の詳細",
+      "showAll": "すべて表示",
+      "textError_one": "エラー",
+      "textError_other": "{{count}} エラー",
+      "textNotification_one": "通知",
+      "textNotification_other": "{{count}} 通知",
+      "textWarning_one": "警告",
+      "textWarning_other": "{{count}} 警告",
+      "titleCancelTask": "キャンセル",
+      "titleCollapse": "折りたたみ",
+      "titleExpand": "展開"
+    },
+    "errors": {
+      "noHostElement": "指定されたHTML要素が見つかりません"
+    },
+    "menu": {
+      "aria-label": "メニュー",
+      "pin-button-title": "ピン",
+      "toogleText": "メニューを開く",
+      "unpin-button-title": "ピン留め解除"
+    },
+    "progress": {
+      "page": "ページ"
+    },
+    "search": {
+      "cancel-btn": "キャンセル",
+      "clear-btn": "クリア",
+      "didn-find-msg": "一致する情報が見つかりませんでした",
+      "match-case": "大文字と小文字を区別",
+      "more-results-btn": "さらに検索結果を表示",
+      "paneltitle": "検索",
+      "search-cancelled-msg": "{{page}}ページで検索をキャンセルしました",
+      "search-results": "検索結果",
+      "start-search-btn": "検索",
+      "whole-word": "単語単位で検索"
+    },
+    "sidebar": {
+      "aria-label": "サイドバー",
+      "collapse-btn": "折りたたむ",
+      "expand-btn": "展開する"
+    },
+    "toolbar": {
+      "aria-label": "ツールバー",
+      "cancel": "キャンセル",
+      "expand": "ツールバーを展開する",
+      "fullscreen": "フルスクリーン",
+      "gotofirst": "先頭ページ",
+      "gotolast": "最終ページ",
+      "gotonext": "次ページ",
+      "gotoprevious": "前ページ",
+      "hist-back": "戻る",
+      "hist-fwd": "進む",
+      "hist-parent": "親レポートに戻る",
+      "movetool": "移動",
+      "refresh": "更新",
+      "zoom-fitpage": "ページ全体",
+      "zoom-fitwidth": "ページ幅",
+      "zoom-menu-header": "ズーム",
+      "zoom-zoomin": "拡大",
+      "zoom-zoomout": "縮小"
+    },
+    "top-bottom-panel": {
+      "aria-label": "追加パネル"
+    }
+  },
+  "exportcsv": {
+    "formatKey": "csv",
+    "friendlyName": "CSVファイル（*.csv）",
+    "settings": {
+      "ColumnsDelimiter": {
+        "category": "概要",
+        "label": "区切り文字",
+        "type": "string"
+      },
+      "DateTimeFormat": {
+        "category": "書式",
+        "label": "日付時刻形式",
+        "type": "string"
+      },
+      "Encoding": {
+        "category": "概要",
+        "enum": {
+          "us-ascii": "ASCII",
+          "utf-16": "Unicode",
+          "utf-8": "UTF-8"
+        },
+        "label": "エンコーディング",
+        "type": "enum"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "NoHeader": {
+        "category": "概要",
+        "label": "ヘッダー行を除く",
+        "type": "bool"
+      },
+      "NumericFormat": {
+        "category": "書式",
+        "label": "数値形式",
+        "type": "string"
+      },
+      "QuotationMode": {
+        "category": "概要",
+        "enum": {
+          "AlwaysQuote": "必ず追加",
+          "AutoQuote": "自動"
+        },
+        "label": "修飾子の追加",
+        "type": "enum"
+      },
+      "QuotationSymbol": {
+        "category": "概要",
+        "label": "テキスト修飾子",
+        "type": "string"
+      },
+      "RowsDelimiter": {
+        "category": "概要",
+        "label": "改行コード",
+        "type": "string"
+      }
+    }
+  },
+  "exportcsvdata": {
+    "formatKey": "csvdata",
+    "friendlyName": "Excelデータ (*.csv)",
+    "settings": {
+      "ColumnsDelimiter": {
+        "category": "概要",
+        "label": "区切り文字",
+        "type": "string"
+      },
+      "Encoding": {
+        "category": "概要",
+        "enum": {
+          "us-ascii": "ASCII",
+          "utf-16": "Unicode",
+          "utf-8": "UTF-8"
+        },
+        "label": "エンコーディング",
+        "type": "enum"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "NoHeader": {
+        "category": "概要",
+        "label": "ヘッダー行を除く",
+        "type": "bool"
+      },
+      "QuotationSymbol": {
+        "category": "概要",
+        "label": "テキスト修飾子",
+        "type": "string"
+      },
+      "RowsDelimiter": {
+        "category": "概要",
+        "label": "改行コード",
+        "type": "string"
+      }
+    }
+  },
+  "exportdoc": {
+    "formatKey": "doc",
+    "friendlyName": "Word文書 (*.doc)",
+    "settings": {
+      "Author": {
+        "category": "概要",
+        "label": "作成者",
+        "type": "string"
+      },
+      "BaseHref": {
+        "category": "概要",
+        "label": "ベースURL",
+        "type": "string"
+      },
+      "Categories": {
+        "category": "概要",
+        "label": "分類",
+        "type": "string"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "Generator": {
+        "category": "概要",
+        "label": "生成元",
+        "type": "string"
+      },
+      "PageHeight": {
+        "category": "概要",
+        "label": "ページの高さ",
+        "type": "string"
+      },
+      "PageWidth": {
+        "category": "概要",
+        "label": "ページの幅",
+        "type": "string"
+      },
+      "Title": {
+        "category": "概要",
+        "label": "タイトル",
+        "type": "string"
+      }
+    }
+  },
+  "exportdocx": {
+    "formatKey": "docx",
+    "friendlyName": "Word文書 (*.docx)",
+    "settings": {
+      "Author": {
+        "category": "概要",
+        "label": "作成者",
+        "type": "string"
+      },
+      "Categories": {
+        "category": "概要",
+        "label": "分類",
+        "type": "string"
+      },
+      "CompanyName": {
+        "category": "概要",
+        "label": "会社",
+        "type": "string"
+      },
+      "DocumentCompatibilityVersion": {
+        "category": "概要",
+        "enum": {
+          "Word2007": "Word 2007",
+          "Word2010": "Word 2010",
+          "Word2013": "Word 2013"
+        },
+        "label": "Wordのバージョン",
+        "type": "enum"
+      },
+      "DpiX": {
+        "category": "概要",
+        "editorOptions": {
+          "max": 10000,
+          "min": 1,
+          "step": 1
+        },
+        "label": "水平解像度",
+        "type": "int"
+      },
+      "DpiY": {
+        "category": "概要",
+        "editorOptions": {
+          "max": 10000,
+          "min": 1,
+          "step": 1
+        },
+        "label": "垂直解像度",
+        "type": "int"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "FontEmbeddingMode": {
+        "category": "Misc",
+        "enum": {
+          "Auto": "有効",
+          "False": "いいえ",
+          "True": "はい"
+        },
+        "label": "フォント埋め込み",
+        "type": "enum"
+      },
+      "Orientation": {
+        "category": "ページ設定",
+        "enum": {
+          "Default": "既定値",
+          "Landscape": "横",
+          "Portrait": "縦"
+        },
+        "label": "ページの向き",
+        "type": "enum"
+      },
+      "PaperSize": {
+        "category": "ページ設定",
+        "enum": {
+          "A3": "A3",
+          "A4": "A4",
+          "A4Small": "A4（小）",
+          "A5": "A5",
+          "B4": "B4",
+          "B5": "B5",
+          "Default": "既定値",
+          "Executive": "エグゼクティヴ",
+          "Ledger": "レジャー",
+          "Legal": "リーガル",
+          "Letter": "レター",
+          "LetterSmall": "レター（小）",
+          "Statement": "ステイトメント",
+          "Tabloid": "タブロイド"
+        },
+        "label": "用紙サイズ",
+        "type": "enum"
+      },
+      "Password": {
+        "category": "セキュリティ",
+        "label": "読み取りパスワード",
+        "type": "string"
+      },
+      "ReadOnlyRecommended": {
+        "category": "セキュリティ",
+        "label": "読み取り専用",
+        "type": "bool"
+      },
+      "TOCAutoUpdate": {
+        "category": "概要",
+        "label": "目次を自動更新",
+        "type": "bool"
+      },
+      "Title": {
+        "category": "概要",
+        "label": "タイトル",
+        "type": "string"
+      },
+      "WritePassword": {
+        "category": "セキュリティ",
+        "label": "書き込みパスワード",
+        "type": "string"
+      }
+    }
+  },
+  "exportjson": {
+    "formatKey": "json",
+    "friendlyName": "JSONファイル (*.json)",
+    "settings": {
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "Formatted": {
+        "category": "概要",
+        "label": "整形する",
+        "type": "bool"
+      },
+      "QuotePropertyNames": {
+        "category": "概要",
+        "label": "引用符で囲む",
+        "type": "bool"
+      }
+    }
+  },
+  "exportmht": {
+    "formatKey": "mht",
+    "friendlyName": "Webページ (*.mht)",
+    "settings": {
+      "BookmarkStyle": {
+        "category": "概要",
+        "enum": {
+          "Html": "Html",
+          "None": "なし"
+        },
+        "label": "ブックマークの形式",
+        "type": "enum"
+      },
+      "CharacterSet": {
+        "category": "概要",
+        "enum": {
+          "Big5": "Big5",
+          "EucJp": "EucJp",
+          "HzGb2312": "HzGb2312",
+          "Ibm850": "Ibm850",
+          "Iso2022Jp": "Iso2022Jp",
+          "Iso8859_1": "Iso8859_1",
+          "Iso8859_2": "Iso8859_2",
+          "Iso8859_5": "Iso8859_5",
+          "Iso8859_6": "Iso8859_6",
+          "Koi8r": "Koi8r",
+          "Ksc5601": "Ksc5601",
+          "ShiftJis": "ShiftJis",
+          "UnicodeUtf16": "UnicodeUtf16",
+          "UnicodeUtf8": "UnicodeUtf8"
+        },
+        "label": "文字セット",
+        "type": "enum"
+      },
+      "CreateFramesetPage": {
+        "category": "概要",
+        "label": "フレーム表示",
+        "type": "bool"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "Fragment": {
+        "category": "出力",
+        "label": "Bodyコンテンツのみ",
+        "type": "bool"
+      },
+      "IncludeHtmlHeader": {
+        "category": "概要",
+        "label": "ヘッダを含める",
+        "type": "bool"
+      },
+      "IncludePageMargins": {
+        "category": "概要",
+        "label": "余白を含める",
+        "type": "bool"
+      },
+      "LinkTarget": {
+        "category": "描画",
+        "label": "リンクターゲット",
+        "type": "string"
+      },
+      "Mode": {
+        "category": "描画",
+        "enum": {
+          "Galley": "ゲラモード",
+          "Paginated": "ページモード"
+        },
+        "label": "レイアウトモード",
+        "type": "enum"
+      },
+      "MultiPage": {
+        "category": "概要",
+        "label": "複数ページ",
+        "type": "bool"
+      },
+      "OutputTOC": {
+        "category": "出力",
+        "label": "目次を出力する",
+        "type": "bool"
+      },
+      "OutputType": {
+        "category": "概要",
+        "enum": {
+          "DynamicHtml": "Dynamic Html",
+          "LegacyHtml": "Legacy Html"
+        },
+        "label": "HTMLの種類",
+        "type": "enum"
+      },
+      "Pagination": {
+        "category": "概要",
+        "label": "ページネーション",
+        "type": "bool"
+      },
+      "RemoveVerticalSpace": {
+        "category": "概要",
+        "label": "縦方向の余白を削除する",
+        "type": "bool"
+      },
+      "Title": {
+        "category": "概要",
+        "label": "タイトル",
+        "type": "string"
+      }
+    }
+  },
+  "exportpdf": {
+    "formatKey": "pdf",
+    "friendlyName": "PDFファイル (*.pdf)",
+    "settings": {
+      "Application": {
+        "category": "概要",
+        "label": "アプリケーション",
+        "type": "string"
+      },
+      "Author": {
+        "category": "概要",
+        "label": "作成者",
+        "type": "string"
+      },
+      "ConvertMetaToPng": {
+        "category": "その他",
+        "label": "PNGファイルに変換",
+        "type": "bool"
+      },
+      "EmbedFonts": {
+        "category": "フォント",
+        "enum": {
+          "All": "すべて",
+          "None": "なし",
+          "Partial": "ASCII以外"
+        },
+        "label": "フォント埋め込み",
+        "type": "enum"
+      },
+      "Encrypt": {
+        "category": "セキュリティ",
+        "label": "暗号化",
+        "type": "bool"
+      },
+      "ExportBookmarks": {
+        "category": "その他",
+        "label": "ブックマークを出力",
+        "type": "bool"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "ImageInterpolation": {
+        "category": "その他",
+        "enum": {
+          "Auto": "有効",
+          "None": "無効"
+        },
+        "label": "画像の補間値",
+        "type": "enum"
+      },
+      "ImageQuality": {
+        "category": "その他",
+        "enum": {
+          "Highest": "高",
+          "Lowest": "低",
+          "Medium": "中"
+        },
+        "label": "画像の品質",
+        "type": "enum"
+      },
+      "Keywords": {
+        "category": "概要",
+        "label": "キーワード",
+        "type": "string"
+      },
+      "NeverEmbedFonts": {
+        "category": "フォント",
+        "label": "埋め込まないフォント",
+        "type": "string"
+      },
+      "OwnerPassword": {
+        "category": "セキュリティ",
+        "label": "オーナーパスワード",
+        "type": "string"
+      },
+      "Pagination": {
+        "category": "概要",
+        "label": "ページネーション",
+        "type": "bool"
+      },
+      "Permissions": {
+        "category": "セキュリティ",
+        "editorOptions": {
+          "values": {
+            "AllowAccessibleReaders": "Allow Accessible Readers",
+            "AllowAssembly": "Allow Assembly",
+            "AllowCopy": "Allow Copy",
+            "AllowFillIn": "Allow Fill In",
+            "AllowModifyAnnotations": "Allow Annotating",
+            "AllowModifyContents": "Allow Modifying",
+            "AllowPrint": "Allow Printing"
+          }
+        },
+        "flags": {
+          "AllowAccessibleReaders": "アクセシビリティのための内容の抽出",
+          "AllowAssembly": "文書アセンブリ",
+          "AllowCopy": "内容のコピー",
+          "AllowFillIn": "フォームフィールドの入力",
+          "AllowModifyAnnotations": "注釈",
+          "AllowModifyContents": "文書の変更",
+          "AllowPrint": "印刷"
+        },
+        "label": "許可",
+        "type": "flags"
+      },
+      "Subject": {
+        "category": "概要",
+        "label": "サブタイトル",
+        "type": "string"
+      },
+      "Title": {
+        "category": "概要",
+        "label": "タイトル",
+        "type": "string"
+      },
+      "UserPassword": {
+        "category": "セキュリティ",
+        "label": "ユーザーパスワード",
+        "type": "string"
+      },
+      "Version": {
+        "category": "情報",
+        "enum": {
+          "Pdf12": "PDF-1.2",
+          "Pdf13": "PDF-1.3",
+          "Pdf14": "PDF-1.4",
+          "Pdf15": "PDF-1.5",
+          "Pdf16": "PDF-1.6",
+          "Pdf17": "PDF-1.7",
+          "Pdf20": "PDF-2.0",
+          "PdfA1a": "PDF/A-1a",
+          "PdfA1b": "PDF/A-1b",
+          "PdfA2a": "PDF/A-2a",
+          "PdfA2b": "PDF/A-2b",
+          "PdfA2u": "PDF/A-2u",
+          "PdfA3a": "PDF/A-3a",
+          "PdfA3b": "PDF/A-3b",
+          "PdfA3u": "PDF/A-3u",
+          "PdfUA1": "PDF/UA-1"
+        },
+        "label": "バージョン",
+        "type": "enum"
+      },
+      "WatermarkAngle": {
+        "category": "ウォーターマーク",
+        "label": "角度",
+        "type": "string"
+      },
+      "WatermarkColor": {
+        "category": "ウォーターマーク",
+        "label": "色",
+        "type": "string"
+      },
+      "WatermarkFontName": {
+        "category": "ウォーターマーク",
+        "label": "フォント名",
+        "type": "string"
+      },
+      "WatermarkFontSize": {
+        "category": "ウォーターマーク",
+        "label": "サイズ",
+        "type": "string"
+      },
+      "WatermarkFontStyle": {
+        "category": "ウォーターマーク",
+        "enum": {
+          "Bold": "ボールド",
+          "Italic": "イタリック",
+          "Regular": "レギュラー",
+          "Strikeout": "取り消し線",
+          "Underline": "下線"
+        },
+        "label": "スタイル",
+        "type": "enum"
+      },
+      "WatermarkPrintOnly": {
+        "category": "ウォーターマーク",
+        "label": "印刷のみ",
+        "type": "bool"
+      },
+      "WatermarkTitle": {
+        "category": "ウォーターマーク",
+        "label": "テキスト",
+        "type": "string"
+      }
+    }
+  },
+  "exportrtf": {
+    "formatKey": "rtf",
+    "friendlyName": "リッチテキスト (*.rtf)",
+    "settings": {
+      "EnableShapes": {
+        "category": "概要",
+        "label": "図形を出力する",
+        "type": "bool"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "Pagination": {
+        "category": "概要",
+        "label": "ページネーション",
+        "type": "bool"
+      }
+    }
+  },
+  "exporttextprint": {
+    "formatKey": "textprint",
+    "friendlyName": "テキスト印刷 (*.txt)",
+    "settings": {
+      "CharHeight": {
+        "category": "概要",
+        "label": "文字の高さ",
+        "type": "string"
+      },
+      "CharWidth": {
+        "category": "概要",
+        "label": "文字の幅",
+        "type": "string"
+      },
+      "HorizontalPaddings": {
+        "category": "概要",
+        "enum": {
+          "Adjust": "自動調整",
+          "Keep": "保持する",
+          "Remove": "削除する"
+        },
+        "label": "パディング",
+        "type": "enum"
+      },
+      "LineEnding": {
+        "category": "概要",
+        "label": "改行コード",
+        "type": "string"
+      }
+    }
+  },
+  "exporttiff": {
+    "formatKey": "tiff",
+    "friendlyName": "TIFF画像 (*.tiff)",
+    "settings": {
+      "Compression": {
+        "category": "概要",
+        "enum": {
+          "Ccitt3": "CCITT3",
+          "Ccitt4": "CCITT4",
+          "Lzw": "LZW",
+          "None": "なし",
+          "Rle": "RLE"
+        },
+        "label": "圧縮方法",
+        "type": "enum"
+      },
+      "CompressionScheme": {
+        "category": "概要",
+        "enum": {
+          "Ccitt3": "CCITT3",
+          "Ccitt4": "CCITT4",
+          "Lzw": "LZW",
+          "None": "なし",
+          "Rle": "RLE"
+        },
+        "label": "圧縮方法",
+        "type": "enum"
+      },
+      "Dither": {
+        "category": "概要",
+        "label": "ディザリング",
+        "type": "bool"
+      },
+      "DpiX": {
+        "category": "概要",
+        "editorOptions": {
+          "max": 10000,
+          "min": 1,
+          "step": 1
+        },
+        "label": "水平解像度",
+        "type": "int"
+      },
+      "DpiY": {
+        "category": "概要",
+        "editorOptions": {
+          "max": 10000,
+          "min": 1,
+          "step": 1
+        },
+        "label": "垂直解像度",
+        "type": "int"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "Pagination": {
+        "category": "概要",
+        "label": "ページネーション",
+        "type": "bool"
+      }
+    }
+  },
+  "exporttxt": {
+    "formatKey": "txt",
+    "friendlyName": "テキスト文書 (*.txt)",
+    "settings": {
+      "Encoding": {
+        "category": "概要",
+        "enum": {
+          "us-ascii": "ASCII",
+          "utf-16": "Unicode",
+          "utf-8": "UTF-8"
+        },
+        "label": "エンコーディング",
+        "type": "enum"
+      },
+      "Extension": {
+        "category": "ファイル名",
+        "enum": {
+          ".csv": ".csv",
+          ".txt": ".txt"
+        },
+        "label": "拡張子",
+        "type": "enum"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "PageDelimiter": {
+        "category": "概要",
+        "label": "ページ区切り",
+        "type": "string"
+      },
+      "PreserveHiddenText": {
+        "category": "概要",
+        "enum": {
+          "Auto": "自動",
+          "False": "出力しない",
+          "True": "出力する"
+        },
+        "label": "非表示文字の出力",
+        "type": "enum"
+      },
+      "QuotationMode": {
+        "category": "概要",
+        "enum": {
+          "AlwaysQuote": "必ず追加",
+          "AutoQuote": "自動"
+        },
+        "label": "修飾子の追加",
+        "type": "enum"
+      },
+      "QuotationSymbol": {
+        "category": "概要",
+        "label": "テキスト修飾子",
+        "type": "string"
+      },
+      "SuppressEmptyLines": {
+        "category": "概要",
+        "label": "空白行を抑制",
+        "type": "bool"
+      },
+      "TextDelimiter": {
+        "category": "概要",
+        "label": "区切り文字",
+        "type": "string"
+      }
+    }
+  },
+  "exportxls": {
+    "formatKey": "xls",
+    "friendlyName": "Excelブック (*.xls)",
+    "settings": {
+      "AutoRowHeight": {
+        "category": "概要",
+        "label": "行の高さ調節",
+        "type": "bool"
+      },
+      "DisplayGridLines": {
+        "category": "概要",
+        "label": "グリッド線の表示",
+        "type": "bool"
+      },
+      "EnableToggles": {
+        "category": "概要",
+        "label": "アウトライン表示",
+        "type": "bool"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "ImageDpi": {
+        "category": "概要",
+        "editorOptions": {
+          "max": 10000,
+          "min": 1,
+          "step": 1
+        },
+        "label": "ImageDpi",
+        "type": "int"
+      },
+      "LayoutMode": {
+        "category": "概要",
+        "enum": {
+          "Galley": "ゲラモード",
+          "Paginated": "ページモード"
+        },
+        "label": "レイアウトモード",
+        "type": "enum"
+      },
+      "MultiSheet": {
+        "category": "概要",
+        "label": "複数シート",
+        "type": "bool"
+      },
+      "Orientation": {
+        "category": "ページ設定",
+        "enum": {
+          "Default": "既定値",
+          "Landscape": "横",
+          "Portrait": "縦"
+        },
+        "label": "ページの向き",
+        "type": "enum"
+      },
+      "Pagination": {
+        "category": "概要",
+        "label": "ページネーション",
+        "type": "bool"
+      },
+      "PaperSize": {
+        "category": "ページ設定",
+        "enum": {
+          "A3": "A3",
+          "A4": "A4",
+          "A4Small": "A4（小）",
+          "A5": "A5",
+          "B4": "B4",
+          "B5": "B5",
+          "Default": "既定値",
+          "Executive": "エグゼクティヴ",
+          "Ledger": "レジャー",
+          "Legal": "リーガル",
+          "Letter": "レター",
+          "LetterSmall": "レター（小）",
+          "Statement": "ステイトメント",
+          "Tabloid": "タブロイド"
+        },
+        "label": "用紙サイズ",
+        "type": "enum"
+      },
+      "Password": {
+        "category": "セキュリティ",
+        "label": "読み取りパスワード",
+        "type": "string"
+      },
+      "ProtectedBy": {
+        "category": "セキュリティ",
+        "label": "管理者",
+        "type": "string"
+      },
+      "ReadOnlyRecommended": {
+        "category": "セキュリティ",
+        "label": "読み取り専用",
+        "type": "bool"
+      },
+      "RightToLeft": {
+        "category": "概要",
+        "label": "右から左に表示",
+        "type": "bool"
+      },
+      "SheetMode": {
+        "category": "概要",
+        "enum": {
+          "PagePerSheet": "ページ毎",
+          "SectionPerSheet": "レポートエリア毎",
+          "SingleSheet": "１つのシート"
+        },
+        "label": "シート分割",
+        "type": "enum"
+      },
+      "SheetName": {
+        "category": "概要",
+        "label": "シート名",
+        "type": "string"
+      },
+      "UseDefaultPalette": {
+        "category": "概要",
+        "label": "Excelパレット",
+        "type": "bool"
+      },
+      "WritePassword": {
+        "category": "セキュリティ",
+        "label": "書き込みパスワード",
+        "type": "string"
+      }
+    }
+  },
+  "exportxlsx": {
+    "formatKey": "xlsx",
+    "friendlyName": "Excelブック (*.xlsx)",
+    "settings": {
+      "Author": {
+        "category": "概要",
+        "label": "作成者",
+        "type": "string"
+      },
+      "AutoRowHeight": {
+        "category": "概要",
+        "label": "行の高さ調節",
+        "type": "bool"
+      },
+      "Categories": {
+        "category": "概要",
+        "label": "分類",
+        "type": "string"
+      },
+      "DisplayGridLines": {
+        "category": "概要",
+        "label": "グリッド線の表示",
+        "type": "bool"
+      },
+      "EnableToggles": {
+        "category": "概要",
+        "label": "アウトライン表示",
+        "type": "bool"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "ImageDpi": {
+        "category": "概要",
+        "editorOptions": {
+          "max": 10000,
+          "min": 1,
+          "step": 1
+        },
+        "label": "ImageDpi",
+        "type": "int"
+      },
+      "LayoutMode": {
+        "category": "概要",
+        "enum": {
+          "Galley": "ゲラモード",
+          "Paginated": "ページモード"
+        },
+        "label": "レイアウトモード",
+        "type": "enum"
+      },
+      "MultiSheet": {
+        "category": "概要",
+        "label": "複数シート",
+        "type": "bool"
+      },
+      "OpenXmlStandard": {
+        "category": "概要",
+        "enum": {
+          "Strict": "厳密型 (Strict)",
+          "Transitional": "移行型 (Transitional)"
+        },
+        "label": "Open XML適合レベル",
+        "type": "enum"
+      },
+      "Orientation": {
+        "category": "ページ設定",
+        "enum": {
+          "Default": "既定値",
+          "Landscape": "横",
+          "Portrait": "縦"
+        },
+        "label": "ページの向き",
+        "type": "enum"
+      },
+      "OutputFormat": {
+        "category": "概要",
+        "enum": {
+          "OpenXmlStrict": "厳密型 (Strict)",
+          "OpenXmlTransitional": "移行型 (Transitional)"
+        },
+        "label": "Open XML適合レベル",
+        "type": "enum"
+      },
+      "Pagination": {
+        "category": "概要",
+        "label": "ページネーション",
+        "type": "bool"
+      },
+      "PaperSize": {
+        "category": "ページ設定",
+        "enum": {
+          "A3": "A3",
+          "A4": "A4",
+          "A4Small": "A4（小）",
+          "A5": "A5",
+          "B4": "B4",
+          "B5": "B5",
+          "Default": "既定値",
+          "Executive": "エグゼクティヴ",
+          "Ledger": "レジャー",
+          "Legal": "リーガル",
+          "Letter": "レター",
+          "LetterSmall": "レター（小）",
+          "Statement": "ステイトメント",
+          "Tabloid": "タブロイド"
+        },
+        "label": "用紙サイズ",
+        "type": "enum"
+      },
+      "Password": {
+        "category": "セキュリティ",
+        "label": "読み取りパスワード",
+        "type": "string"
+      },
+      "ProtectedBy": {
+        "category": "セキュリティ",
+        "label": "管理者",
+        "type": "string"
+      },
+      "ReadOnlyRecommended": {
+        "category": "セキュリティ",
+        "label": "読み取り専用",
+        "type": "bool"
+      },
+      "RightToLeft": {
+        "category": "概要",
+        "label": "右から左に表示",
+        "type": "bool"
+      },
+      "SheetMode": {
+        "category": "概要",
+        "enum": {
+          "PagePerSheet": "ページ毎",
+          "SectionPerSheet": "レポートエリア毎",
+          "SingleSheet": "１つのシート"
+        },
+        "label": "シート分割",
+        "type": "enum"
+      },
+      "SheetName": {
+        "category": "概要",
+        "label": "シート名",
+        "type": "string"
+      },
+      "Title": {
+        "category": "概要",
+        "label": "タイトル",
+        "type": "string"
+      },
+      "UseCompression": {
+        "category": "概要",
+        "label": "圧縮する",
+        "type": "bool"
+      },
+      "UseDefaultPalette": {
+        "category": "概要",
+        "label": "Excelパレット",
+        "type": "bool"
+      },
+      "WritePassword": {
+        "category": "セキュリティ",
+        "label": "書き込みパスワード",
+        "type": "string"
+      }
+    }
+  },
+  "exportxlsxdata": {
+    "formatKey": "xlsxdata",
+    "friendlyName": "Excelデータ (*.xlsx)",
+    "settings": {
+      "AllowImages": {
+        "category": "概要",
+        "label": "画像を含める",
+        "type": "bool"
+      },
+      "Author": {
+        "category": "概要",
+        "label": "作成者",
+        "type": "string"
+      },
+      "AutoRowsHeight": {
+        "category": "概要",
+        "label": "行の高さ調節",
+        "type": "bool"
+      },
+      "Categories": {
+        "category": "概要",
+        "label": "分類",
+        "type": "string"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      },
+      "OpenXmlStandard": {
+        "category": "概要",
+        "enum": {
+          "Strict": "厳密型 (Strict)",
+          "Transitional": "移行型 (Transitional)"
+        },
+        "label": "Open XML適合レベル",
+        "type": "enum"
+      },
+      "Password": {
+        "category": "セキュリティ",
+        "label": "読み取りパスワード",
+        "type": "string"
+      },
+      "ProtectedBy": {
+        "category": "セキュリティ",
+        "label": "管理者",
+        "type": "string"
+      },
+      "ReadOnlyRecommended": {
+        "category": "セキュリティ",
+        "label": "読み取り専用",
+        "type": "bool"
+      },
+      "RightToLeft": {
+        "category": "概要",
+        "label": "右から左に表示",
+        "type": "bool"
+      },
+      "Title": {
+        "category": "概要",
+        "label": "タイトル",
+        "type": "string"
+      },
+      "UseCompression": {
+        "category": "概要",
+        "label": "圧縮する",
+        "type": "bool"
+      },
+      "WritePassword": {
+        "category": "セキュリティ",
+        "label": "書き込みパスワード",
+        "type": "string"
+      }
+    }
+  },
+  "exportxml": {
+    "formatKey": "xml",
+    "friendlyName": "XMLドキュメント (*.xml)",
+    "settings": {
+      "Encoding": {
+        "category": "概要",
+        "enum": {
+          "ASCII": "ASCII",
+          "UTF-8": "UTF-8",
+          "Unicode": "Unicode"
+        },
+        "label": "エンコーディング",
+        "type": "enum"
+      },
+      "FileName": {
+        "category": "ファイル",
+        "label": "ファイル名",
+        "type": "string"
+      }
+    }
+  },
+  "jsviewer": {
+    "errors": {
+      "DataProcessing_InvalidFilterExpression": "フィルタ式の評価に失敗しました。",
+      "DataProcessing_InvalidGroupingExpression": "グループ式の評価に失敗しました。",
+      "DataProcessing_InvalidSortingExpression": "ソート式の評価に失敗しました。",
+      "InvalidReportFormat": "レポート形式が無効です。",
+      "UnsupportedReportType": "要求されたレポート形式はサポートされていません。",
+      "aggregateMustSpecifyDataSet": "集計 '{{aggregate}}' では、データ セットを指定する必要があります。",
+      "applyparameters-parameter-notfound": "パラメータが見つかりません: '{{ParameterName}}'",
+      "applyparameters-parameter-wrong-type": "トグルパラメータ '{{ParameterName}}' のフォーマットエラーです。",
+      "bad-response-delayed": "不正なレスポンス（コンテンツ遅延）",
+      "bad-response-doc": "不正なレスポンス（ドキュメント）",
+      "bad-response-report": "不正なレスポンス（レポート）",
+      "bad-response-toc": "目次を取得できません。",
+      "badReportItemName": "コントロール名 {{Name}} が不正であるか、または見つかりません。各レポートアイテムには、有効な一意の名前が必要です。",
+      "blankValueAssignedToNonBlankParameter": "ブランクでないパラメータにブランクの値が割り当てられています",
+      "circularReferenceFromAnother": "循環参照エラー、{{circularChain}} の値式が循環参照を形成しています。",
+      "circularReferenceToItself": "循環参照エラー、{{Name}} の値式がそれ自体を参照しています。",
+      "commandTextIsEmpty": "コマンドテキストが空です。",
+      "cyclicParameter": "レポートパラメータの循環参照",
+      "dataProviderError": "データ接続できません",
+      "dataReadingFailed": "データセット '{{dataSetName}}' からデータを読み取ることができませんでした。",
+      "dataRegionMissingDataSetName": "データ領域 {{DataRegionName}} ではDataSetNameが指定されていません。DataSetNameの値は、レポート内に複数のDataSetがある場合は必須です。",
+      "dataRegionWithNoGrouping": "このリスト {{region}} コントロールにはデータ領域が含まれていますが、グループ化は指定されていません。グループ化は、リストにデータ領域が含まれる場合に必要となります。",
+      "dataSetNotFound": "レポートで参照されているデータセット '{dataSetName}' が見つかりませんでした。",
+      "dataSetNotSpecified": "ページレイアウトの設定で、データセット名を設定してください。",
+      "dataSetProviderNoData": "データが設定されていません。１つのテーブルを指定したDataSet、DataTable、またはDataViewのいずれかを指定してください。",
+      "dataSetProviderNotSpecifiedMainTable": "DataSetに複数のテーブルが含まれています。使用するテーブルを指定してください。",
+      "datasourceMissingElement": "共有データソースのXMLドキュメント内に必須要素 {datasourceName} が見つかりません。",
+      "export-report": "エクスポートエラー",
+      "fieldDataReadingFailed": "データセット '{{dataSetName}}' のフィールド '{{field}}' のデータを読み取ることができませんでした。",
+      "ie-no-pdf-addon": "印刷を有効にするには、Internet ExplorerのアドオンでPDFリーダーを有効にしてください。",
+      "ignore-disposition": "コンテンツがブラウザに埋め込まれた状態で表示されることを想定していますが、正しく表示されない可能性があります。",
+      "infinitePages": "無限ループが検出されました。",
+      "invalidActionControlInPageHeaderFooter": "無効なActionアイテムの使用法です。レポートアイテム {{Name}} はアクションセットを備えていますが、コントロールはページヘッダまたはページフッタにあります。ページのヘッダまたはフッタにあるコントロールを、ブックマークまたはドリルスルーリンクとして使用することはできません。",
+      "invalidColumnSpacing": "Columnsプロパティを設定してカラム形式のレイアウトを作成する場合、カラムの幅を０より大きい値、かつ、ColumnSpacingよりも大きい値に設定してください。",
+      "invalidConnectionStringExpression": "'{{dataSourceName}}' データソースに指定された接続文字列が無効です。",
+      "invalidCustomDataDataGrouping": "カスタムのレポートアイテムのデータグループ化が無効です。静的データのグループ化にグループ化を含めることはできません。",
+      "invalidDataRegionDataSetName": "レポートアイテム {{DataRegionName}} のデータセット名 {{DataSetName}} は無効です。",
+      "invalidDataRegionName": "DataRegion名 {{DataRegionName}} は無効かまたは重複しています。各DataSet、DataRegion、およびGroupingには一意の名前が必要です。",
+      "invalidDataTypeForParameter": "パラメータのデータタイプが無効です",
+      "invalidFieldElement": "データセット {{DataSetName}} 内のフィールド要素 {{ElementName}} が無効です。フィールドには、値またはデータフィールドのいずれかを指定する必要がありますが、両方を指定することはできません。",
+      "invalidFixedPageDataSetName": "レポートのデータセット名 {{DataSetName}} は無効です。",
+      "invalidGroupingName": "グループ名 {{groupName}} が無効または重複しています。データセット、データ領域、グループには、一意の名前を設定してください。",
+      "invalidGroupingParent": "グループ {{groupName}} の親グループが正しくありません。親グループは、グループ化の式が１つだけ存在する場合にのみ有効です。",
+      "invalidKeyInConnectionString": "接続文字列のキーが無効です。: {invalidKey}",
+      "invalidLengthUnitRange": "有効範囲は、{{Min}} ～ {{Max}} です。または、これと同等の値を、cm、mm、pcで設定してください。",
+      "invalidSharedDataSource": "共有データソースが存在しなくなっているか、またはその内容が無効です。",
+      "invalidSnapshotDigitalSignature": "スナップショットの署名が無効です。",
+      "invalidToggleControlInPageHeaderFooter": "無効なトグルアイテムの使用法です。レポートアイテム {{Name}} は表示トグルアイテムセットを備えていますが、トグルコントロールはページヘッダまたはページフッタにあります。ページのヘッダまたはフッタにあるコントロールを、トグルとして使用することはできません。",
+      "invalidToggleItemReference": "無効なトグルアイテムです。レポートアイテム {{Name}} は、ToggleItemがページヘッダまたはフッタのコントロールに設定されています。トグルアイテムは、ページヘッダまたはフッタにあるコンポーネントを参照することはできません。",
+      "invalidUserSortSortExpressionNoScope": "無効なUserSort SortExpressionです。アグリゲートでSortExpressionを使用するには、式またはSortExpressionScopeでスコープが指定されている必要があります。",
+      "invalidUsingReportItemReference": "レポートアイテム {{Name}} のVisibility.Hiddenの式は、ReportItems!コレクションを参照しています。このコレクションは、レポート本文に含まれるアイテムのVisibility.Hiddenの式では使用できません。",
+      "jsonDataSourceNotFound": "Jsonデータソースが見つかりませんでした。",
+      "libraryNotFound": "ライブラリが見つかりません。: {{library}}",
+      "libraryReferenceNotFound": "無効なライブラリ参照です。: {{library}}",
+      "libraryReportItemNotFound": "レポートパーツ '{{reportPart}}' のアイテム '{{reportItem}}' が見つかりません。",
+      "libraryReportPartNotFound": "レポートパーツ '{{reportPart}}' が見つかりません。",
+      "missingRequiredConnectionString": "データソース {{DataSourceName}} の接続文字列がありません。",
+      "missingRequiredElement": "必須要素が見つかりません。{{owner}} {{missingElement}} は必須要素です。",
+      "no-doc": "ドキュメントが読み込まれていません。",
+      "no-doc-cur": "現在のドキュメントはありません。",
+      "no-fmt": "無効なフォーマットキー、または、{{format}} のモジュールがロードされていません。",
+      "no-params-render": "描画できません（パラメータが指定されていません）。",
+      "no-report": "レポートが見つかりません。: {{reportId}}",
+      "no-toc": "目次がありません。",
+      "noDataNoLocateDataSource": "データが設定されていません。また、LocateDataSourceで実行時にデータを取得するように設定されていません。",
+      "noDataSets": "データセットがありません。",
+      "noLicense": "ライセンスがありません。",
+      "nullValueAssignedToNonNullableParameter": "null値が許容されないパラメータにnull値が割り当てられています",
+      "objectProviderCommandTextInvalid": "CommandTextが無効なメンバーに設定されています。オブジェクトデータソースは、パラメータなしでメソッドまたはプロパティを呼び出すことのみをサポートします。",
+      "objectProviderDoesNotSupportIEnumerable": "ObjectDataSourceでオブジェクトを使用するには、IEnumerableインターフェイスをサポートしている必要があります。",
+      "objectProviderNoData": "データが設定されていません。使用するIEnumerableを指定してください。",
+      "openConnectionFailed": "データセット '{{dataSetName}}' への接続を開けませんでした。",
+      "overflowHeightTooSmall": "{{OverflowName}} のHeightが正しくありません。これはDataRegion.Heightの値以上でなければなりません。",
+      "overflowWidthTooSmall": "{{OverflowName}} のWidthが正しくありません。これはDataRegion.Widthの値以上でなければなりません。",
+      "parameterNotValidated": "確認できませんでした。",
+      "parameterValueIsNotValid": "パラメータの値が有効ではありません。",
+      "params-hidden": "非表示のパラメータに無効なものがあります。",
+      "print-report": "印刷できません。",
+      "professionalRequired": "Professionalのライセンスが必要です。",
+      "render-doc": "ドキュメントを描画できません。",
+      "report-open-details": "レポート情報を取得できません。",
+      "report-open-lbl": "レポートを開けません。",
+      "reportItemExpressionReferenceMustBeInScope": "無効なレポートアイテムの参照です。式では、同じスコープ内または親スコープ内のレポートアイテムしか参照できません。レポートアイテム {{componentName}} に無効な参照があり、レポートアイテム {{referencedReportItem}} を参照しています。",
+      "reportItemExpressionReferenceShouldNotContainOtherReferences": "無効なレポートアイテムの参照です。レポートアイテムの参照を含む本文にある式では、Field、DataSet、DataSourceは参照できません。レポートアイテム {{componentName}} に無効な参照があり、レポートアイテム {{referencedReportItem}} を参照しています。",
+      "resourceNotFound": "リソースを読み込めません。",
+      "scriptCompilationFailed": "スクリプトのコンパイル失敗。",
+      "set-parameters": "パラメータ設定エラー",
+      "snapshotHighVersion": "読み込んだスナップショットは、現在のものより新しいバージョンです。",
+      "subreportNotFoundError": "サブレポートが見つかりません。: {{subName}}",
+      "subreportNotSpecified": "サブレポートのレポートアイテム '{{itemName}}' のサブレポート名が指定されていません。",
+      "trialExpired": "トライアル版の使用期間が終了しました。",
+      "unknown-display": "不明な表示形式です。: {{displayType}}",
+      "unknown-event": "不明なイベントが処理されませんでした。",
+      "unknown-format": "不明な形式です。",
+      "unknown-response": "不明なサーバーレスポンスです。",
+      "wrong-dpi-settings": "'{{Dpi}}' は、0より大きくなければなりません。"
+    },
+    "export": {
+      "export-preparing": "エクスポートの準備中..."
+    },
+    "panels": {
+      "dashboard-sections": "ダッシュボード",
+      "export": "エクスポート",
+      "parameters": "パラメータ",
+      "reports": "レポート一覧",
+      "toc": "目次"
+    },
+    "toolbar": {
+      "galley-mode": "ゲラモード",
+      "item-exist": "同じキーのアイテム (\"{{itemKey}}\") がすでに存在します。",
+      "mode-continious": "連続ページ",
+      "mode-single": "単一ページ",
+      "print-btn": "印刷...",
+      "print-preparing": "印刷の準備中...",
+      "theme": "テーマ",
+      "themePicker": {
+        "themes": {
+          "activeReports": "グリーン",
+          "activeReportsDark": "グリーン（ダーク）",
+          "darkOled": "有機EL（ダーク）",
+          "default": "デフォルト",
+          "defaultDark": "デフォルト（ダーク）",
+          "highContrast": "ハイコントラスト",
+          "highContrastDark": "ハイコントラスト（ダーク）"
+        }
+      }
+    }
+  },
+  "viewererror": {
+    "details": {
+      "unexpected": ""
+    },
+    "title": {
+      "render-report": ""
+    }
+  }
+}

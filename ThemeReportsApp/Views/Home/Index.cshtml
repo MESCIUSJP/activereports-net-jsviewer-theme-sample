@@ -1,0 +1,69 @@
+@{
+	// このページは共通レイアウトを使わない、シンプルなViewer表示例です。
+	ViewData["Title"] = "JS Viewer";
+}
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<!-- ブラウザー表示用の基本メタ情報と静的アセット -->
+	<link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#000000">
+	<title>JS Viewer</title>
+	<link href="~/jsViewer.min.css" rel="stylesheet">
+	<link href="~/index.css" rel="stylesheet">
+</head>
+
+<!-- Viewerの描画領域。JavaScriptからこのIDを指定して初期化します。 -->
+<body onload="loadViewer()">
+	<div style="width: 100%; overflow-x: hidden">
+		<div style="float:right;width:100%" id="viewerContainer">
+		</div>
+	</div>
+	<!-- ActiveReports JS Viewer本体 -->
+	<script src="~/jsViewer.min.js"></script>
+	<script type="text/javascript">
+		// JS Viewerに渡すMESCIUSテーマの定義です。
+		let viewer;
+		const mesciusTheme = {
+			name: "MESCIUS Theme",
+			backgroundMain: "#EFEDEA",
+			backgroundPanels: "#E6E2DD",
+			primary: "#697683",
+			secondary: "#AF9D52",
+			neutral: "#8A8886",
+			error: "#AC6D85",
+			warning: "#AF9D52",
+			fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
+		};
+
+		// ページ読み込み時にViewerを生成し、レポートを表示します。
+		function loadViewer() {
+			viewer = GrapeCity.ActiveReports.JSViewer.create({
+				element: '#viewerContainer',
+					themes: {
+						initialTheme: 'MESCIUS Theme'
+						, themeSelector: {
+							availableThemes: ['default', mesciusTheme, 'defaultDark', 'darkOled', 'highContrast', 'highContrastDark', 'activeReports', 'activeReportsDark']
+						}
+						// テーマピッカーを無効化する場合は、上記のthemeSelector設定を次の内容に置き換えます。						
+						// , themeSelector: {
+						// 	enabled: false,
+						// 	availableThemes: ['default', mesciusTheme, 'defaultDark', 'darkOled', 'highContrast', 'highContrastDark', 'activeReports', 'activeReportsDark']
+						// }
+
+					}
+				});
+
+			// テーマピッカーを非表示にする場合は、Viewer生成後、ツールバーからテーマピッカーを削除します。
+			// viewer.toolbar.desktop.removeItem('$theme');
+
+			// Reportsフォルダー内のレポート定義を開きます。
+			viewer.openReport("Report.rdlx");
+		}
+	</script>
+</body>
+</html>

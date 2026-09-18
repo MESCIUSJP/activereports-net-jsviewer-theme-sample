@@ -1,0 +1,104 @@
+﻿@{
+    // 共通レイアウトを使用し、ヘッダーに表示するページ名を設定します。
+    Layout = "_BusinessLayout";
+    ViewData["Title"] = "帳票1";
+}
+
+<!-- レポートViewerが画面いっぱいに表示されるコンテナー -->
+<div class="h-full overflow-hidden rounded-lg border border-[var(--border-color)] bg-[var(--panel-bg)] shadow-sm transition-colors duration-200">
+    <div id="viewerContainer" class="h-full w-full"></div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        // ActiveReports JS Viewerで使用するアプリ独自のテーマ定義です。
+        const businessLightTheme = {
+            name: "BusinessLight",
+            type: "light",
+            backgroundMain: "#F1F3F5",
+            backgroundPanels: "#FFFFFF",
+            primary: "#272F3F",
+            secondary: "#475569",
+            neutral: "#66717D",
+            error: "#B65C66",
+            warning: "#A98245",
+            fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
+        };
+
+        const businessDarkTheme = {
+            name: "BusinessDark",
+            type: "dark",
+            backgroundMain: "#0D0F12",
+            backgroundPanels: "#181B20",
+            primary: "#3F4854",
+            secondary: "#2E353E",
+            neutral: "#A7ADB5",
+            error: "#B85C65",
+            warning: "#A98245",
+            fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
+        };
+
+        const mesciusTheme = {
+            name: "MESCIUS",
+            type: "light",
+            backgroundMain: "#EFEDEA",
+            backgroundPanels: "#E6E2DD",
+            primary: "#697683",
+            secondary: "#AF9D52",
+            neutral: "#505050",
+            error: "#AC6D85",
+            warning: "#AF9D52",
+            fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
+        };
+
+        // セレクターから選択可能なテーマを1か所で管理します。
+        const availableThemes = [
+            businessLightTheme,
+            businessDarkTheme,
+            mesciusTheme
+        ];
+
+        let viewer;
+
+        // 選択されたテーマでViewerを作り直します。
+        // Viewerは初期化時にテーマが決まるため、テーマ変更時は再生成します。
+        function createReportViewer(themeName) {
+            if (viewer) {
+                // 既存Viewerを破棄して、イベントやDOMの重複を防ぎます。
+                viewer.destroy();
+            }
+
+            // 再生成前にコンテナーを空にします。
+            document.getElementById("viewerContainer").innerHTML = "";
+
+            viewer = GrapeCity.ActiveReports.JSViewer.create({
+                element: "#viewerContainer",
+                themes: {
+                    initialTheme: themeName,
+                    // 業務システム側のテーマセレクターで切り替えるため、
+                    // JSビューワ内のテーマピッカーは無効化しています。
+                    themeSelector: {
+                        enabled: false,
+                        availableThemes: availableThemes
+                    }
+                }
+            });
+
+            // Reportsフォルダーにあるレポート定義を開きます。
+            viewer.openReport("Report.rdlx");
+        }
+
+        // レイアウトのテーマ色とViewerのテーマを同時に切り替えます。
+        window.changeSystemTheme = function(themeName) {
+            document.getElementById("systemBody").dataset.systemTheme = themeName;
+            createReportViewer(themeName);
+        };
+
+        // DOM構築後に初期テーマとViewerを設定します。
+        document.addEventListener("DOMContentLoaded", function() {
+            const initialTheme = "BusinessLight";
+            document.getElementById("systemThemeSelector").value = initialTheme;
+            window.changeSystemTheme(initialTheme);
+        });
+    </script>
+}

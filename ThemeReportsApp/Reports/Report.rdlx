@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<dd:Name xmlns:dd="http://schemas.datadynamics.com/reporting/2005/02/reportdefinition">Report.rdlx</dd:Name>
+	<Body>
+		<Height>29.7cm</Height>
+		<ReportItems>
+			<FixedPage Name="FixedPage1">
+				<Pages>
+					<Page>
+						<ReportItems>
+							<Textbox Name="TextBox1">
+								<Top>2cm</Top>
+								<Left>1.6cm</Left>
+								<Width>12.4cm</Width>
+								<Height>4.8cm</Height>
+								<Style>
+									<FontFamily>メイリオ</FontFamily>
+									<FontSize>26pt</FontSize>
+									<FontStyle>Normal</FontStyle>
+									<FontWeight>400</FontWeight>
+									<PaddingBottom>2pt</PaddingBottom>
+									<PaddingLeft>2pt</PaddingLeft>
+									<PaddingRight>2pt</PaddingRight>
+									<PaddingTop>2pt</PaddingTop>
+								</Style>
+								<ZIndex>1</ZIndex>
+								<Value>ActiveReportsJSビューワのデザインカスタマイズ</Value>
+							</Textbox>
+						</ReportItems>
+						<PaperOrientation>Portrait</PaperOrientation>
+						<Width>21cm</Width>
+						<Height>29.7cm</Height>
+						<LeftMargin>2.5cm</LeftMargin>
+						<TopMargin>2.5cm</TopMargin>
+						<RightMargin>2.5cm</RightMargin>
+						<BottomMargin>2.5cm</BottomMargin>
+						<CustomProperties>
+							<CustomProperty>
+								<Name>PaperKind</Name>
+								<Value>A4</Value>
+							</CustomProperty>
+						</CustomProperties>
+					</Page>
+				</Pages>
+			</FixedPage>
+		</ReportItems>
+	</Body>
+	<BottomMargin>2.5cm</BottomMargin>
+	<LeftMargin>2.5cm</LeftMargin>
+	<RightMargin>2.5cm</RightMargin>
+	<TopMargin>2.5cm</TopMargin>
+	<PageHeight>29.7cm</PageHeight>
+	<PageWidth>21cm</PageWidth>
+	<Width>21cm</Width>
+</Report>

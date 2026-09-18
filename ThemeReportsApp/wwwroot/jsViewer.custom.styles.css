@@ -1,0 +1,87 @@
+:root {
+	/* common */
+	--ar-button-border-radius: 5px;
+	/* default state */
+	--ar-button-background-color-default: #1c7cdc;
+	--ar-button-text-color-default: #ffffff;
+	/* hover state */
+	--ar-button-background-color-hover: #3f9af6;
+	--ar-button-text-color-hover: var(--ar-button-text-color-default);
+	/* active state */
+	--ar-button-background-color-active: #1764b1;
+	--ar-button-text-color-active: var(--ar-button-text-color-default);
+	/* pressed state */
+	--ar-button-background-color-pressed: #489cff;
+	--ar-button-text-color-pressed: var(--ar-button-text-color-default);
+	--ar-button-border-color-pressed: #134f8b;
+	--ar-button-border-width-pressed: 1px;
+}
+
+.ar-button {
+	/* common */
+	cursor: pointer;
+	user-select: none;
+	/* html only */
+	transition: all 0.2s ease-in-out;
+	border-radius: var(--ar-button-border-radius);
+	background-color: var(--ar-button-background-color-default);
+	color: var(--ar-button-text-color-default);
+}
+
+/* styles only for html */
+.ar-button:hover {
+	background-color: var(--ar-button-background-color-hover);
+	color: var(--ar-button-text-color-hover);
+}
+
+.ar-button:active {
+	background-color: var(--ar-button-background-color-active);
+	color: var(--ar-button-text-color-active);
+}
+
+.ar-button-pressed {
+	background-color: var(--ar-button-background-color-pressed);
+	color: var(--ar-button-text-color-pressed);
+	border-color: var(--ar-button-border-color-pressed);
+	border-width: var(--ar-button-border-width-pressed);
+	border-style: solid;
+}
+
+/* styles only for svg */
+.ar-button rect {
+	fill: var(--ar-button-background-color-default);
+	rx: var(--ar-button-border-radius);
+	ry: var(--ar-button-border-radius);
+	transition: all 0.2s ease-in-out;
+}
+
+.ar-button:hover rect {
+	fill: var(--ar-button-background-color-hover);
+}
+
+.ar-button:active rect {
+	fill: var(--ar-button-background-color-active);
+}
+
+.ar-button text {
+	fill: var(--ar-button-text-color-default);
+	transition: all 0.2s ease-in-out;
+}
+
+.ar-button:hover text {
+	fill: var(--ar-button-text-color-hover);
+}
+
+.ar-button:active text {
+	fill: var(--ar-button-text-color-active);
+}
+
+.ar-button-pressed rect {
+	fill: var(--ar-button-background-color-pressed);
+	stroke: var(--ar-button-border-color-pressed);
+	stroke-width: var(--ar-button-border-width-pressed);
+}
+
+.ar-button-pressed text {
+	fill: var(--ar-button-text-color-pressed);
+}

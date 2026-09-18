@@ -1,0 +1,128 @@
+﻿@{
+    // このビューを単独のHTMLレイアウトとして使用します。
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>@ViewData["Title"] - 業務支援システム</title>
+
+    <!-- ActiveReports JS Viewerの標準スタイル -->
+    <link rel="stylesheet" href="~/jsViewer.min.css" />
+    <!-- Tailwind CSSのユーティリティクラスをブラウザー上で利用します。 -->
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        /* テーマごとに差し替える共通カラー。画面全体の配色はここで管理します。 */
+        :root {
+            --app-bg: #eef1f4;
+            --panel-bg: #fff;
+            --sidebar-bg: #0f1729;
+            --sidebar-text: #cbd5e1;
+            --sidebar-active: #1e293b;
+            --sidebar-accent: #94a3b8;
+            --header-text: #1f2937;
+            --border-color: #d2d8df;
+        }
+
+        /* bodyのdata-system-theme属性に応じてCSS変数を切り替えます。 */
+        body[data-system-theme="BusinessDark"] {
+            --app-bg: #0d0f12;
+            --panel-bg: #181b20;
+            --sidebar-bg: #050608;
+            --sidebar-text: #d1d5db;
+            --sidebar-active: #252a31;
+            --sidebar-accent: #8793a1;
+            --header-text: #f3f4f6;
+            --border-color: #353a42;
+        }
+
+        body[data-system-theme="MESCIUS"] {
+            --app-bg: #efedea;
+            --panel-bg: #fff;
+            --sidebar-bg: #697683;
+            --sidebar-text: #f0efed;
+            --sidebar-active: #5a6671;
+            --sidebar-accent: #af9d52;
+            --header-text: #3c4641;
+            --border-color: #d4cfc8;
+        }
+        /* 繰り返し使用するTailwindクラスを名前付きクラスにまとめます。 */
+        .app-transition { @@apply transition-colors duration-200; }
+        .sidebar-link { @@apply block border-l-4 border-transparent px-6 py-3 hover:bg-white/10 hover:text-white; }
+        .sidebar-link-active { @@apply border-[var(--sidebar-accent)] bg-[var(--sidebar-active)] text-white; }
+        .nav-group { @@apply mt-6; }
+        .nav-label { @@apply px-6 pb-2 text-xs tracking-wider opacity-70; }
+    </style>
+
+    @* 各ページ固有のスタイル。未定義のページでも利用できるよう任意セクションにします。 *@
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<!-- data-system-themeは、ヘッダーのテーマ選択と画面全体の配色を連動させます。 -->
+<body id="systemBody"
+            data-system-theme="BusinessLight"
+            class="m-0 h-screen overflow-hidden bg-[var(--app-bg)] font-sans text-slate-800 app-transition">
+
+    <div class="flex h-screen">
+        <aside class="w-60 shrink-0 bg-[var(--sidebar-bg)] text-[var(--sidebar-text)] shadow-lg app-transition">
+            <div class="border-b border-white/10 px-6 py-5 text-xl font-semibold text-white">
+                業務支援システム
+            </div>
+
+            <!-- 帳票・マスター・設定をまとめたサイドナビゲーション -->
+            <nav class="py-3" aria-label="メインメニュー">
+                <div class="nav-group mt-4">
+                    <div class="nav-label">帳票</div>
+                    <a asp-controller="Home" asp-action="Report1" class="sidebar-link sidebar-link-active">帳票1</a>
+                    <a href="#" class="sidebar-link">帳票2</a>
+                    <a href="#" class="sidebar-link">帳票3</a>
+                </div>
+
+                <div class="nav-group">
+                    <div class="nav-label">マスター</div>
+                    <a href="#" class="sidebar-link">マスタ1</a>
+                    <a href="#" class="sidebar-link">マスタ2</a>
+                </div>
+
+                <div class="nav-group">
+                    <div class="nav-label">設定</div>
+                    <a href="#" class="sidebar-link">設定1</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="flex min-w-0 flex-1 flex-col">
+            <!-- ページタイトルとテーマ切り替えを配置するヘッダー -->
+            <header class="flex h-16 shrink-0 items-center justify-between border-b border-[var(--border-color)] bg-[var(--panel-bg)] px-6 shadow-sm app-transition">
+                <h1 class="text-lg font-semibold text-[var(--header-text)]">@ViewData["Title"]</h1>
+
+                <label class="flex items-center gap-3 text-sm text-[var(--header-text)]">
+                    <span>テーマ</span>
+                    <!-- Report1.cshtmlのJavaScriptがこの値を読み取り、UIテーマを変更します。 -->
+                    <select id="systemThemeSelector"
+                            class="rounded-md border border-[var(--border-color)] bg-[var(--panel-bg)] px-3 py-2 text-[var(--header-text)] outline-none"
+                            onchange="window.changeSystemTheme(this.value)">
+                        <option value="BusinessLight">通常</option>
+                        <option value="BusinessDark">ダーク</option>
+                        <option value="MESCIUS">MESCIUS</option>
+                    </select>
+                </label>
+            </header>
+
+            <!-- 各ページの本文を表示する領域 -->
+            <div class="min-h-0 flex-1 p-6">
+                @RenderBody()
+            </div>
+        </main>
+    </div>
+
+    <!-- ページ側のScriptsセクションより先にViewer本体を読み込みます。 -->
+    <script src="~/jsViewer.min.js"></script>
+    @* 各ページ固有のJavaScript。Report1ではレポートViewerを初期化します。 *@
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
