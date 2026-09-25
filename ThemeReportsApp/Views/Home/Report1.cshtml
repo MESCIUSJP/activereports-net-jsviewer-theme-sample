@@ -1,17 +1,17 @@
 ﻿@{
-    // 共通レイアウトを使用し、ヘッダーに表示するページ名を設定します。
+    // 業務システムの共通レイアウトを使用します。
     Layout = "_BusinessLayout";
     ViewData["Title"] = "帳票1";
 }
 
-<!-- レポートViewerが画面いっぱいに表示されるコンテナー -->
-<div class="h-full overflow-hidden rounded-lg border border-[var(--border-color)] bg-[var(--panel-bg)] shadow-sm transition-colors duration-200">
+<!-- JSビューワを表示する領域 -->
+<div class="h-full overflow-hidden rounded-lg border border-[var(--border-color)] bg-[var(--panel-bg)] shadow-sm app-transition">
     <div id="viewerContainer" class="h-full w-full"></div>
 </div>
 
 @section Scripts {
     <script type="text/javascript">
-        // ActiveReports JS Viewerで使用するアプリ独自のテーマ定義です。
+        // 業務システムの通常テーマに合わせたカスタムテーマ
         const businessLightTheme = {
             name: "BusinessLight",
             type: "light",
@@ -25,6 +25,7 @@
             fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
         };
 
+        // 業務システムのダークテーマに合わせたカスタムテーマ
         const businessDarkTheme = {
             name: "BusinessDark",
             type: "dark",
@@ -38,6 +39,7 @@
             fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
         };
 
+        // 参考用のMESCIUSカラーのカスタムテーマ
         const mesciusTheme = {
             name: "MESCIUS",
             type: "light",
@@ -51,7 +53,6 @@
             fontFamily: "Segoe UI, Meiryo, Arial, sans-serif"
         };
 
-        // セレクターから選択可能なテーマを1か所で管理します。
         const availableThemes = [
             businessLightTheme,
             businessDarkTheme,
@@ -60,8 +61,7 @@
 
         let viewer;
 
-        // 選択されたテーマでViewerを作り直します。
-        // Viewerは初期化時にテーマが決まるため、テーマ変更時は再生成します。
+        // 選択されたテーマを初期テーマに指定してViewerを作り直します。
         function createReportViewer(themeName) {
             if (viewer) {
                 // 既存Viewerを破棄して、イベントやDOMの重複を防ぎます。
@@ -75,7 +75,7 @@
                 element: "#viewerContainer",
                 themes: {
                     initialTheme: themeName,
-                    // 業務システム側のテーマセレクターで切り替えるため、
+                    // 業務システム側のテーマ選択で切り替えるため、
                     // JSビューワ内のテーマピッカーは無効化しています。
                     themeSelector: {
                         enabled: false,
@@ -88,17 +88,10 @@
             viewer.openReport("Report.rdlx");
         }
 
-        // レイアウトのテーマ色とViewerのテーマを同時に切り替えます。
-        window.changeSystemTheme = function(themeName) {
-            document.getElementById("systemBody").dataset.systemTheme = themeName;
-            createReportViewer(themeName);
-        };
+        // 業務システムのテーマ変更を受け取り、Viewerへ反映します。
+        systemTheme.onChange(createReportViewer);
 
-        // DOM構築後に初期テーマとViewerを設定します。
-        document.addEventListener("DOMContentLoaded", function() {
-            const initialTheme = "BusinessLight";
-            document.getElementById("systemThemeSelector").value = initialTheme;
-            window.changeSystemTheme(initialTheme);
-        });
+        // 現在のテーマでViewerを表示します。
+        createReportViewer(systemTheme.current());
     </script>
 }
